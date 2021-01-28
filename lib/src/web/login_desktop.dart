@@ -1,14 +1,25 @@
 import 'package:flutter/material.dart';
 
 
-class loginDesktop extends StatelessWidget {
-  const loginDesktop({Key key}) : super(key: key);
+
+class loginDesktop extends StatefulWidget {
+  loginDesktop({Key key}) : super(key: key);
+
+  @override
+  _loginDesktopState createState() => _loginDesktopState();
+}
+
+class _loginDesktopState extends State<loginDesktop> {
+  List _isHovering = [false];
+
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return Row(
       children: <Widget>[
-        //Esse container serve pra dar um fundo à área de dados e botão
-        Container(
+        Expanded(
+          flex: 5,
+          //Esse container serve pra dar um fundo à área de dados e botão
+          child: Container(
             //fundo colorido do container
             decoration: BoxDecoration(
                 boxShadow: [
@@ -42,7 +53,7 @@ class loginDesktop extends StatelessWidget {
                             keyboardType: TextInputType.emailAddress,
                             style: TextStyle(
                               color: Colors.blue,
-                              fontSize: 18,
+                              fontSize: 16,
                             ),
                             decoration: InputDecoration(
                                 labelText: "Email",
@@ -52,7 +63,7 @@ class loginDesktop extends StatelessWidget {
                             keyboardType: TextInputType.visiblePassword,
                             style: TextStyle(
                               color: Colors.blue,
-                              fontSize: 18,
+                              fontSize: 16,
                             ),
                             decoration: InputDecoration(
                                 labelText: "Senha",
@@ -61,12 +72,39 @@ class loginDesktop extends StatelessWidget {
                         ],
                       )),
 
-                  Text(
-                    "Esqueci minha senha",
-                    style: TextStyle(color: Colors.blueAccent, fontSize: 13),
-                  ),
+                  //OPÇÃO DE 'ESQUECI MINHA SENHA'
+                  InkWell(
+                      onTap: () {},
+                      onHover: (value) {
+                        setState(() {
+                          _isHovering[0] = value;
+                        });
+                      },
+                      child: Column(
+                        children: <Widget>[
+                          Text(
+                            "Esqueci minha senha",
+                            style: TextStyle(
+                                color: Colors.blueAccent, fontSize: 13),
+                          ),
 
-                  SizedBox(height:20),
+                          SizedBox(height: 1),
+                          // Para mostrar uma linha abaixo
+                          Visibility(
+                            maintainAnimation: true,
+                            maintainState: true,
+                            maintainSize: true,
+                            visible: _isHovering[0],
+                            child: Container(
+                              height: 1,
+                              width: 140,
+                              color: Colors.blueAccent,
+                            ),
+                          ),
+                        ],
+                      )),
+
+                  SizedBox(height: 20),
                   //BOTÃO DE ENVIAR DADOS
                   MaterialButton(
                       color: Color.fromRGBO(65, 70, 71, 1.0),
@@ -84,7 +122,20 @@ class loginDesktop extends StatelessWidget {
                       ))
                 ],
               ),
-            ))
+            ),
+          ),
+        ),
+        Expanded(
+          flex: 1,
+          child: SizedBox(),
+        ),
+        Expanded(
+          flex: 4,
+          child: Padding(
+            padding: const EdgeInsets.symmetric(vertical: 0.0),
+            child: Image.asset("/Images/loginImage.png"),
+          ),
+        ),
       ],
     );
   }

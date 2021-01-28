@@ -23,7 +23,19 @@ class _NavbarMobileState extends State<NavbarMobile> {
             padding: EdgeInsets.all(20),
             child: Row(
               children: <Widget>[
-                
+                //ELEMENTOS DA NAVBAR
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: <Widget>[
+                    IconButton(
+                      icon: Icon(Icons.menu),
+                      onPressed: () {
+                      },
+                      color: Colors.white,
+                    ),
+                  ],
+                ),
+
                 Expanded(
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,

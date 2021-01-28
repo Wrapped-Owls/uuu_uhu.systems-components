@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class logInMobile extends StatefulWidget {
-  logInMobile({Key key}) : super(key: key);
+class LogInMobile extends StatefulWidget {
+  LogInMobile({Key key}) : super(key: key);
 
   @override
-  _logInMobileState createState() => _logInMobileState();
+  _LogInMobileState createState() => _LogInMobileState();
 }
 
-class _logInMobileState extends State<logInMobile> {
+class _LogInMobileState extends State<LogInMobile> {
   List _isHovering = [false];
   @override
   Widget build(BuildContext context) {
@@ -36,7 +36,7 @@ class _logInMobileState extends State<logInMobile> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
                   Text(
-                    "Login",
+                    'Login',
                     style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
                   ),
                   Padding(
@@ -52,7 +52,7 @@ class _logInMobileState extends State<logInMobile> {
                               fontSize: 16,
                             ),
                             decoration: InputDecoration(
-                                labelText: "Email",
+                                labelText: 'Email',
                                 labelStyle: TextStyle(color: Colors.black)),
                           ),
                           TextFormField(
@@ -62,7 +62,7 @@ class _logInMobileState extends State<logInMobile> {
                               fontSize: 16,
                             ),
                             decoration: InputDecoration(
-                                labelText: "Senha",
+                                labelText: 'Senha',
                                 labelStyle: TextStyle(color: Colors.black)),
                           ),
                         ],
@@ -79,7 +79,7 @@ class _logInMobileState extends State<logInMobile> {
                       child: Column(
                         children: <Widget>[
                           Text(
-                            "Esqueci minha senha",
+                            'Esqueci minha senha',
                             style: TextStyle(
                                 color: Colors.blueAccent, fontSize: 13),
                           ),
@@ -112,7 +112,7 @@ class _logInMobileState extends State<logInMobile> {
                         padding: const EdgeInsets.symmetric(
                             vertical: 10, horizontal: 20.0),
                         child: Text(
-                          "Entrar",
+                          'Entrar',
                           style: TextStyle(color: Colors.white),
                         ),
                       ))

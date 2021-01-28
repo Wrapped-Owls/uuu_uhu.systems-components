@@ -26,7 +26,7 @@ class _NavbarDesktopState extends State<NavbarDesktop> {
             child: Row(
               children: <Widget>[
                 Text(
-                  "Navbar",
+                  'Navbar',
                   style: TextStyle(
                       fontWeight: FontWeight.bold,
                       color: Colors.white,

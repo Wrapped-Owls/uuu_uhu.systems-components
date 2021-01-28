@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 
 
 
-class loginDesktop extends StatefulWidget {
-  loginDesktop({Key key}) : super(key: key);
+class LoginDesktop extends StatefulWidget {
+  LoginDesktop({Key key}) : super(key: key);
 
   @override
-  _loginDesktopState createState() => _loginDesktopState();
+  _LoginDesktopState createState() => _LoginDesktopState();
 }
 
-class _loginDesktopState extends State<loginDesktop> {
+class _LoginDesktopState extends State<LoginDesktop> {
   List _isHovering = [false];
 
   @override
@@ -40,7 +40,7 @@ class _loginDesktopState extends State<loginDesktop> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
                   Text(
-                    "Login",
+                    'Login',
                     style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
                   ),
                   Padding(
@@ -56,7 +56,7 @@ class _loginDesktopState extends State<loginDesktop> {
                               fontSize: 16,
                             ),
                             decoration: InputDecoration(
-                                labelText: "Email",
+                                labelText: 'Email',
                                 labelStyle: TextStyle(color: Colors.black)),
                           ),
                           TextFormField(
@@ -66,7 +66,7 @@ class _loginDesktopState extends State<loginDesktop> {
                               fontSize: 16,
                             ),
                             decoration: InputDecoration(
-                                labelText: "Senha",
+                                labelText: 'Senha',
                                 labelStyle: TextStyle(color: Colors.black)),
                           ),
                         ],
@@ -83,7 +83,7 @@ class _loginDesktopState extends State<loginDesktop> {
                       child: Column(
                         children: <Widget>[
                           Text(
-                            "Esqueci minha senha",
+                            'Esqueci minha senha',
                             style: TextStyle(
                                 color: Colors.blueAccent, fontSize: 13),
                           ),
@@ -116,7 +116,7 @@ class _loginDesktopState extends State<loginDesktop> {
                         padding: const EdgeInsets.symmetric(
                             vertical: 10, horizontal: 20.0),
                         child: Text(
-                          "Entrar",
+                          'Entrar',
                           style: TextStyle(color: Colors.white),
                         ),
                       ))
@@ -133,7 +133,7 @@ class _loginDesktopState extends State<loginDesktop> {
           flex: 4,
           child: Padding(
             padding: const EdgeInsets.symmetric(vertical: 0.0),
-            child: Image.asset("/Images/loginImage.png"),
+            child: Image.asset('/Images/loginImage.png'),
           ),
         ),
       ],

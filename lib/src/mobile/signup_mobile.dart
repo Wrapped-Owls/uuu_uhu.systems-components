@@ -77,7 +77,7 @@ class _SignupMobileState extends State<SignupMobile> {
                               fontSize: 16,
                             ),
                             decoration: InputDecoration(
-                                labelText: 'password',
+                                labelText: 'Password',
                                 labelStyle: TextStyle(color: Colors.black)),
                           ),
 

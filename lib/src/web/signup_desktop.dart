@@ -79,7 +79,7 @@ class _SignupDesktopState extends State<SignupDesktop> {
                               fontSize: 16,
                             ),
                             decoration: InputDecoration(
-                                labelText: 'password',
+                                labelText: 'Password',
                                 labelStyle: TextStyle(color: Colors.black)),
                           ),
 

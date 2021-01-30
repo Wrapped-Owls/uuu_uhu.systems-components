@@ -8,7 +8,7 @@ class LogInMobile extends StatefulWidget {
 }
 
 class _LogInMobileState extends State<LogInMobile> {
-  List _isHovering = [false];
+  final _isHovering = <bool>[false];
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -55,7 +55,10 @@ class _LogInMobileState extends State<LogInMobile> {
                                 labelText: 'Email',
                                 labelStyle: TextStyle(color: Colors.black)),
                           ),
+
+                          SizedBox(height: 10),
                           TextFormField(
+                            obscureText: true,
                             keyboardType: TextInputType.visiblePassword,
                             style: TextStyle(
                               color: Colors.blue,
@@ -93,7 +96,7 @@ class _LogInMobileState extends State<LogInMobile> {
                             visible: _isHovering[0],
                             child: Container(
                               height: 1,
-                              width: 140,
+                              width: 120,
                               color: Colors.blueAccent,
                             ),
                           ),
@@ -121,10 +124,7 @@ class _LogInMobileState extends State<LogInMobile> {
             ),
           ),
         ),
-
-        
       ],
     );
-  
   }
 }

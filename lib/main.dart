@@ -3,6 +3,7 @@ import 'package:uuu_uhu.systems_components/src/navbar.dart';
 import 'package:uuu_uhu.systems_components/src/login.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
+import 'package:uuu_uhu.systems_components/uuu_uhu.systems_components.dart';
 
 void main() {
   runApp(MyApp());
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      theme: ThemeData(primarySwatch: Colors.blue, fontFamily: 'Montserrat'),
+      theme: UuuUhuThemes.getLight(),
       home: MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }

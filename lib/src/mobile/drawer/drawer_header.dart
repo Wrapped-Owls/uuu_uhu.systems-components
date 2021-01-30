@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 class HeaderDrawer extends StatelessWidget {
-  const HeaderDrawer({Key key}) : super(key: key);
+  final String title;
+  const HeaderDrawer(this.title);
 
   @override
   Widget build(BuildContext context) {
@@ -13,7 +14,7 @@ class HeaderDrawer extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         children: <Widget>[
           Text(
-            'LEARN MORE NOW',
+            title,
             style: TextStyle(
               fontSize: 18,
               fontWeight: FontWeight.w800,
@@ -21,7 +22,7 @@ class HeaderDrawer extends StatelessWidget {
             ),
           ),
           Text(
-            'Click Here',
+            'Subtitle',
             style: TextStyle(color: Colors.white),
           )
         ],

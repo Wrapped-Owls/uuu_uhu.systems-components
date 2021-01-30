@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class NavbarDesktop extends StatefulWidget {
-  NavbarDesktop({Key key}) : super(key: key);
+  const NavbarDesktop({Key key}) : super(key: key);
 
   @override
   _NavbarDesktopState createState() => _NavbarDesktopState();
@@ -9,7 +9,7 @@ class NavbarDesktop extends StatefulWidget {
 
 class _NavbarDesktopState extends State<NavbarDesktop> {
   //o número de itens nessa lista é o número de itens na navbar
-  List _isHovering = [false, false, false, false];
+  final _isHovering = <bool>[false, false, false, false];
   @override
   Widget build(BuildContext context) {
     

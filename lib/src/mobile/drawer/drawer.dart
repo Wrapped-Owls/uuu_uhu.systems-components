@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:uuu_uhu.systems_components/friggraynd_icons.dart';
 import 'package:uuu_uhu.systems_components/src/mobile/drawer/drawer_header.dart';
 import 'package:uuu_uhu.systems_components/src/mobile/drawer/drawer_item.dart';
 
@@ -15,9 +16,11 @@ class MainDrawer extends StatelessWidget {
       ),
       child: Column(
         children: <Widget>[
-          HeaderDrawer(),
-          DrawerItem('Episodes', Icons.videocam),
-          DrawerItem('About', Icons.help),
+          HeaderDrawer('Drawer Title'),
+          DrawerItem('Episodes', FriggrayndIcons.friggraynd_cvheip),
+          DrawerItem('About', FriggrayndIcons.friggraynd_enemies),
+          DrawerItem('Random', FriggrayndIcons.friggraynd_nautilus),
+          DrawerItem('Test', FriggrayndIcons.friggraynd_squid),
         ],
       ),
     );

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:uuu_uhu.systems_components/friggraynd_icons.dart';
 
 class NavbarMobile extends StatefulWidget {
   NavbarMobile({Key key}) : super(key: key);
@@ -9,7 +10,7 @@ class NavbarMobile extends StatefulWidget {
 
 class _NavbarMobileState extends State<NavbarMobile> {
   //o número de itens nessa lista é o número de itens na navbar
-  List _isHovering = [false, false, false, false];
+  final _isHovering = <bool>[false, false, false, false];
   @override
   Widget build(BuildContext context) {
     var screenSize = MediaQuery.of(context).size;
@@ -28,7 +29,7 @@ class _NavbarMobileState extends State<NavbarMobile> {
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: <Widget>[
                     IconButton(
-                      icon: Icon(Icons.menu),
+                      icon: Icon(FriggrayndIcons.company_logo),
                       onPressed: () {
                       },
                       color: Colors.white,

@@ -10,7 +10,7 @@ class LoginDesktop extends StatefulWidget {
 }
 
 class _LoginDesktopState extends State<LoginDesktop> {
-  List _isHovering = [false];
+  final _isHovering = <bool>[false];
 
   @override
   Widget build(BuildContext context) {
@@ -59,13 +59,17 @@ class _LoginDesktopState extends State<LoginDesktop> {
                                 labelText: 'Email',
                                 labelStyle: TextStyle(color: Colors.black)),
                           ),
+
+                          SizedBox(height:10),
                           TextFormField(
+                            obscureText: true,
                             keyboardType: TextInputType.visiblePassword,
                             style: TextStyle(
                               color: Colors.blue,
                               fontSize: 16,
                             ),
                             decoration: InputDecoration(
+
                                 labelText: 'Senha',
                                 labelStyle: TextStyle(color: Colors.black)),
                           ),
@@ -97,7 +101,7 @@ class _LoginDesktopState extends State<LoginDesktop> {
                             visible: _isHovering[0],
                             child: Container(
                               height: 1,
-                              width: 140,
+                              width: 120,
                               color: Colors.blueAccent,
                             ),
                           ),

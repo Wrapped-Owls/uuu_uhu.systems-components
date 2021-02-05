@@ -3,6 +3,7 @@ import 'package:uuu_uhu.systems_components/src/navbar.dart';
 import 'package:uuu_uhu.systems_components/src/login.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
+import 'package:uuu_uhu.systems_components/src/profile.dart';
 import 'package:uuu_uhu.systems_components/src/signup.dart';
 import 'package:uuu_uhu.systems_components/uuu_uhu.systems_components.dart';
 
@@ -53,11 +54,12 @@ class _MyHomePageState extends State<MyHomePage> {
               child: Column(
                 children: <Widget>[
                   Navbar(),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(
-                        vertical: 20.0, horizontal: 40.0),
-                    child: Signup(),//Login(),
-                  ),
+                  Profile(),
+                  // Padding(
+                  //   padding: const EdgeInsets.symmetric(
+                  //       vertical: 20.0, horizontal: 40.0),
+                  //   //child: Signup(),Login(),
+                  // ),
                 ],
               ),
             ),

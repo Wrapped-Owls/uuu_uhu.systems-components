@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 class ProfileDesktop extends StatelessWidget {
-  const ProfileDesktop({Key key}) : super(key: key);
+  final String title1, title2, title3;
+  const ProfileDesktop(this.title1, this.title2, this.title3);
 
   @override
   Widget build(BuildContext context) {
@@ -42,7 +43,7 @@ class ProfileDesktop extends StatelessWidget {
                           child: Container(
                             alignment: Alignment.center,
                             height: 50,
-                            child: Text('TAB 1'),
+                            child: Text(title1),
                           ),
                         ),
                       ),
@@ -53,7 +54,7 @@ class ProfileDesktop extends StatelessWidget {
                           child: Container(
                             alignment: Alignment.center,
                             height: 50,
-                            child: Text('TAB 2'),
+                            child: Text(title2),
                           ),
                         ),
                       ),
@@ -64,7 +65,7 @@ class ProfileDesktop extends StatelessWidget {
                           child: Container(
                             alignment: Alignment.center,
                             height: 50,
-                            child: Text('TAB 3'),
+                            child: Text(title3),
                           ),
                         ),
                       ),

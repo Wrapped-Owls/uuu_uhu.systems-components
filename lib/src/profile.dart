@@ -10,8 +10,8 @@ class Profile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ScreenTypeLayout(
-      mobile: ProfileMobile(),
-      tablet: ProfileDesktop(),
+      mobile: ProfileMobile("TTL1", "TTL2", "TTL3"),
+      tablet: ProfileDesktop("TTL1", "TTL2", "TTL3"), 
     );
   }
 }

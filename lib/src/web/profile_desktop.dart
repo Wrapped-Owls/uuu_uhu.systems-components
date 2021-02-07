@@ -1,9 +1,22 @@
 import 'package:flutter/material.dart';
+import 'package:uuu_uhu.systems_components/src/web/tabs/profileTab1.dart';
+import 'package:uuu_uhu.systems_components/src/web/tabs/profileTab2.dart';
+import 'package:uuu_uhu.systems_components/src/web/tabs/profileTab3.dart';
 
-class ProfileDesktop extends StatelessWidget {
+//obs: esse widget está como stateful pq a ideia é usar setState para
+//mudar a tab ao clicar no inkwell
+
+class ProfileDesktop extends StatefulWidget {
   final String title1, title2, title3;
-  const ProfileDesktop(this.title1, this.title2, this.title3);
+  ProfileDesktop({Key key, this.title1, this.title2, this.title3})
+      : super(key: key);
 
+  @override
+  _ProfileDesktopState createState() => _ProfileDesktopState();
+}
+
+class _ProfileDesktopState extends State<ProfileDesktop> {
+  var tabSelector = 0;
   @override
   Widget build(BuildContext context) {
     var screenSize = MediaQuery.of(context).size;
@@ -36,36 +49,51 @@ class ProfileDesktop extends StatelessWidget {
                 child: Card(
                   child: Row(
                     children: <Widget>[
+                      //TAB1
                       Expanded(
                         child: InkWell(
                           splashColor: Colors.blue.withAlpha(30),
-                          onTap: () {},
+                          onTap: () {
+                            setState(() {
+                              tabSelector = 1;
+                            });
+                          },
                           child: Container(
                             alignment: Alignment.center,
                             height: 50,
-                            child: Text(title1),
+                            child: Text(widget.title1),
                           ),
                         ),
                       ),
+                      //TAB2
                       Expanded(
                         child: InkWell(
                           splashColor: Colors.blue.withAlpha(30),
-                          onTap: () {},
+                          onTap: () {
+                            setState(() {
+                              tabSelector = 2;
+                            });
+                          },
                           child: Container(
                             alignment: Alignment.center,
                             height: 50,
-                            child: Text(title2),
+                            child: Text(widget.title2),
                           ),
                         ),
                       ),
+                      //TAB3
                       Expanded(
                         child: InkWell(
                           splashColor: Colors.blue.withAlpha(30),
-                          onTap: () {},
+                          onTap: () {
+                            setState(() {
+                              tabSelector = 3;
+                            });
+                          },
                           child: Container(
                             alignment: Alignment.center,
                             height: 50,
-                            child: Text(title3),
+                            child: Text(widget.title3),
                           ),
                         ),
                       ),
@@ -76,7 +104,13 @@ class ProfileDesktop extends StatelessWidget {
             ),
           ],
         ),
+
         
+        tabSelector == 1 ? ProfileTab1(widget.title1) : SizedBox(height: 0),
+
+        tabSelector == 2 ? ProfileTab2(widget.title2) : SizedBox(height: 0),
+
+        tabSelector == 3 ? ProfileTab3(widget.title3) : SizedBox(height: 0),
       ],
     );
   }

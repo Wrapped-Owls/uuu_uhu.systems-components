@@ -30,8 +30,7 @@ class _NavbarMobileState extends State<NavbarMobile> {
                   children: <Widget>[
                     IconButton(
                       icon: Icon(FriggrayndIcons.company_logo),
-                      onPressed: () {
-                      },
+                      onPressed: () {},
                       color: Colors.white,
                     ),
                   ],

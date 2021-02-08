@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:uuu_uhu.systems_components/src/web/tabs/profileTab1.dart';
-import 'package:uuu_uhu.systems_components/src/web/tabs/profileTab2.dart';
-import 'package:uuu_uhu.systems_components/src/web/tabs/profileTab3.dart';
+import 'package:uuu_uhu.systems_components/src/web/tabs/profileTab.dart';
+import 'package:uuu_uhu.systems_components/src/web/tabs/profileTab.dart';
 
 //obs: esse widget está como stateful pq a ideia é usar setState para
 //mudar a tab ao clicar no inkwell
@@ -104,11 +103,11 @@ class ProfileMobileState extends State<ProfileMobile> {
         ),
 
         
-        tabSelector == 1 ? ProfileTab1(widget.title1) : SizedBox(height: 0),
+        tabSelector == 1 ? ProfileTab(widget.title1) : SizedBox(height: 0),
 
-        tabSelector == 2 ? ProfileTab2(widget.title2) : SizedBox(height: 0),
+        tabSelector == 2 ? ProfileTab(widget.title2) : SizedBox(height: 0),
 
-        tabSelector == 3 ? ProfileTab3(widget.title3) : SizedBox(height: 0),
+        tabSelector == 3 ? ProfileTab(widget.title3) : SizedBox(height: 0),
       ],
     );
   }

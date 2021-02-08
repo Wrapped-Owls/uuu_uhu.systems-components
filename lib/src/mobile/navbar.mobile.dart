@@ -11,6 +11,7 @@ class NavbarMobile extends StatefulWidget {
 class _NavbarMobileState extends State<NavbarMobile> {
   //o número de itens nessa lista é o número de itens na navbar
   final _isHovering = <bool>[false, false, false, false];
+
   @override
   Widget build(BuildContext context) {
     var screenSize = MediaQuery.of(context).size;
@@ -30,8 +31,7 @@ class _NavbarMobileState extends State<NavbarMobile> {
                   children: <Widget>[
                     IconButton(
                       icon: Icon(FriggrayndIcons.company_logo),
-                      onPressed: () {
-                      },
+                      onPressed: () {},
                       color: Colors.white,
                     ),
                   ],

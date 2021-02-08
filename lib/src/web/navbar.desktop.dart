@@ -10,10 +10,9 @@ class NavbarDesktop extends StatefulWidget {
 class _NavbarDesktopState extends State<NavbarDesktop> {
   //o número de itens nessa lista é o número de itens na navbar
   final _isHovering = <bool>[false, false, false, false];
+
   @override
   Widget build(BuildContext context) {
-    
-    
     var screenSize = MediaQuery.of(context).size;
     return Container(
       height: 80,

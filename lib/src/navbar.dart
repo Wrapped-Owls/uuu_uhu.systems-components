@@ -1,5 +1,5 @@
-import 'package:uuu_uhu.systems_components/src/web/navbar_desktop.dart';
-import 'package:uuu_uhu.systems_components/src/mobile/navbar_mobile.dart';
+import 'package:uuu_uhu.systems_components/src/web/navbar.desktop.dart';
+import 'package:uuu_uhu.systems_components/src/mobile/navbar.mobile.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 

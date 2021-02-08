@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-
-
 class LoginDesktop extends StatefulWidget {
   LoginDesktop({Key key}) : super(key: key);
 
@@ -56,11 +54,12 @@ class _LoginDesktopState extends State<LoginDesktop> {
                               fontSize: 16,
                             ),
                             decoration: InputDecoration(
-                                labelText: 'Email',
-                                labelStyle: TextStyle(color: Colors.black)),
+                              labelText: 'Email',
+                              labelStyle: TextStyle(color: Colors.black),
+                            ),
                           ),
 
-                          SizedBox(height:10),
+                          SizedBox(height: 10),
                           TextFormField(
                             obscureText: true,
                             keyboardType: TextInputType.visiblePassword,
@@ -69,9 +68,9 @@ class _LoginDesktopState extends State<LoginDesktop> {
                               fontSize: 16,
                             ),
                             decoration: InputDecoration(
-
-                                labelText: 'Senha',
-                                labelStyle: TextStyle(color: Colors.black)),
+                              labelText: 'Senha',
+                              labelStyle: TextStyle(color: Colors.black),
+                            ),
                           ),
                         ],
                       )),

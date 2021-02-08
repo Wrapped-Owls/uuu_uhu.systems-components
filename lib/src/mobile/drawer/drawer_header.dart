@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 class HeaderDrawer extends StatelessWidget {
   final String title;
+
   const HeaderDrawer(this.title);
 
   @override

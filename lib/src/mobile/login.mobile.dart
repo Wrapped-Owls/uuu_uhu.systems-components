@@ -9,6 +9,7 @@ class LogInMobile extends StatefulWidget {
 
 class _LogInMobileState extends State<LogInMobile> {
   final _isHovering = <bool>[false];
+
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -18,16 +19,17 @@ class _LogInMobileState extends State<LogInMobile> {
           child: Container(
             //fundo colorido do container
             decoration: BoxDecoration(
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.black.withOpacity(0.3),
-                    spreadRadius: 5,
-                    blurRadius: 7,
-                    offset: Offset(0, 3), // changes position of shadow
-                  ),
-                ],
-                color: Colors.white,
-                borderRadius: BorderRadius.all(Radius.circular(20))),
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.black.withOpacity(0.3),
+                  spreadRadius: 5,
+                  blurRadius: 7,
+                  offset: Offset(0, 3), // changes position of shadow
+                ),
+              ],
+              color: Colors.white,
+              borderRadius: BorderRadius.all(Radius.circular(20)),
+            ),
             width: 400,
             //Separa os itens do container das bordas dele
             child: Padding(
@@ -52,8 +54,9 @@ class _LogInMobileState extends State<LogInMobile> {
                               fontSize: 16,
                             ),
                             decoration: InputDecoration(
-                                labelText: 'Email',
-                                labelStyle: TextStyle(color: Colors.black)),
+                              labelText: 'Email',
+                              labelStyle: TextStyle(color: Colors.black),
+                            ),
                           ),
 
                           SizedBox(height: 10),
@@ -65,8 +68,9 @@ class _LogInMobileState extends State<LogInMobile> {
                               fontSize: 16,
                             ),
                             decoration: InputDecoration(
-                                labelText: 'Senha',
-                                labelStyle: TextStyle(color: Colors.black)),
+                              labelText: 'Senha',
+                              labelStyle: TextStyle(color: Colors.black),
+                            ),
                           ),
                         ],
                       )),

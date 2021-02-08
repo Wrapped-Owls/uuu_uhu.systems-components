@@ -54,8 +54,9 @@ class _SignupDesktopState extends State<SignupDesktop> {
                               fontSize: 16,
                             ),
                             decoration: InputDecoration(
-                                labelText: 'Username',
-                                labelStyle: TextStyle(color: Colors.black)),
+                              labelText: 'Username',
+                              labelStyle: TextStyle(color: Colors.black),
+                            ),
                           ),
 
                           SizedBox(height: 10),
@@ -66,8 +67,9 @@ class _SignupDesktopState extends State<SignupDesktop> {
                               fontSize: 16,
                             ),
                             decoration: InputDecoration(
-                                labelText: 'Email',
-                                labelStyle: TextStyle(color: Colors.black)),
+                              labelText: 'Email',
+                              labelStyle: TextStyle(color: Colors.black),
+                            ),
                           ),
 
                           SizedBox(height: 10),
@@ -79,8 +81,9 @@ class _SignupDesktopState extends State<SignupDesktop> {
                               fontSize: 16,
                             ),
                             decoration: InputDecoration(
-                                labelText: 'Password',
-                                labelStyle: TextStyle(color: Colors.black)),
+                              labelText: 'Password',
+                              labelStyle: TextStyle(color: Colors.black),
+                            ),
                           ),
 
                           SizedBox(height: 10),
@@ -92,8 +95,9 @@ class _SignupDesktopState extends State<SignupDesktop> {
                               fontSize: 16,
                             ),
                             decoration: InputDecoration(
-                                labelText: 'Confirm password',
-                                labelStyle: TextStyle(color: Colors.black)),
+                              labelText: 'Confirm password',
+                              labelStyle: TextStyle(color: Colors.black),
+                            ),
                           ),
                         ],
                       )),

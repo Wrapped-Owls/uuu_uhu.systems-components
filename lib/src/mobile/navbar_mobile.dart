@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:uuu_uhu.systems_components/friggraynd_icons.dart';
-
 class NavbarMobile extends StatefulWidget {
   NavbarMobile({Key key}) : super(key: key);
 
@@ -9,7 +8,7 @@ class NavbarMobile extends StatefulWidget {
 }
 
 class _NavbarMobileState extends State<NavbarMobile> {
-  //o número de itens nessa lista é o número de itens na navbar
+  //The number of items in this list is the number of Navbar items.
   final _isHovering = <bool>[false, false, false, false];
   @override
   Widget build(BuildContext context) {
@@ -24,7 +23,7 @@ class _NavbarMobileState extends State<NavbarMobile> {
             padding: EdgeInsets.all(20),
             child: Row(
               children: <Widget>[
-                //ELEMENTOS DA NAVBAR
+                //Navbar elements
                 Row(
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: <Widget>[
@@ -59,7 +58,7 @@ class _NavbarMobileState extends State<NavbarMobile> {
                               ),
                             ),
                             SizedBox(height: 5),
-                            // Para mostrar uma linha abaixo
+                            //To show a line below the word
                             Visibility(
                               maintainAnimation: true,
                               maintainState: true,
@@ -94,7 +93,6 @@ class _NavbarMobileState extends State<NavbarMobile> {
                               ),
                             ),
                             SizedBox(height: 5),
-                            // Para mostrar uma linha abaixo
                             Visibility(
                               maintainAnimation: true,
                               maintainState: true,
@@ -129,7 +127,6 @@ class _NavbarMobileState extends State<NavbarMobile> {
                               ),
                             ),
                             SizedBox(height: 5),
-                            // Para mostrar uma linha abaixo
                             Visibility(
                               maintainAnimation: true,
                               maintainState: true,
@@ -166,7 +163,6 @@ class _NavbarMobileState extends State<NavbarMobile> {
                               ),
                             ),
                             SizedBox(height: 5),
-                            // Para mostrar uma linha abaixo
                             Visibility(
                               maintainAnimation: true,
                               maintainState: true,

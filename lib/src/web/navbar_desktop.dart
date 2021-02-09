@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+
 class NavbarDesktop extends StatefulWidget {
   const NavbarDesktop({Key key}) : super(key: key);
 
@@ -8,7 +9,7 @@ class NavbarDesktop extends StatefulWidget {
 }
 
 class _NavbarDesktopState extends State<NavbarDesktop> {
-  //o número de itens nessa lista é o número de itens na navbar
+  //The number of items in this list is the number of Navbar items.
   final _isHovering = <bool>[false, false, false, false];
   @override
   Widget build(BuildContext context) {
@@ -55,7 +56,7 @@ class _NavbarDesktopState extends State<NavbarDesktop> {
                               ),
                             ),
                             SizedBox(height: 5),
-                            // Para mostrar uma linha abaixo
+                            //To show a line below the word
                             Visibility(
                               maintainAnimation: true,
                               maintainState: true,
@@ -90,7 +91,6 @@ class _NavbarDesktopState extends State<NavbarDesktop> {
                               ),
                             ),
                             SizedBox(height: 5),
-                            // Para mostrar uma linha abaixo
                             Visibility(
                               maintainAnimation: true,
                               maintainState: true,
@@ -125,7 +125,6 @@ class _NavbarDesktopState extends State<NavbarDesktop> {
                               ),
                             ),
                             SizedBox(height: 5),
-                            // Para mostrar uma linha abaixo
                             Visibility(
                               maintainAnimation: true,
                               maintainState: true,
@@ -162,7 +161,6 @@ class _NavbarDesktopState extends State<NavbarDesktop> {
                               ),
                             ),
                             SizedBox(height: 5),
-                            // Para mostrar uma linha abaixo
                             Visibility(
                               maintainAnimation: true,
                               maintainState: true,

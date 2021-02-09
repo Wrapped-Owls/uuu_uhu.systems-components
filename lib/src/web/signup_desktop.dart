@@ -16,9 +16,9 @@ class _SignupDesktopState extends State<SignupDesktop> {
       children: <Widget>[
         Expanded(
           flex: 5,
-          //Esse container serve pra dar um fundo à área de dados e botão
+          //That container gives a background to the data and button area
           child: Container(
-            //fundo colorido do container
+            //container colored background
             decoration: BoxDecoration(
                 boxShadow: [
                   BoxShadow(
@@ -31,7 +31,7 @@ class _SignupDesktopState extends State<SignupDesktop> {
                 color: Colors.white,
                 borderRadius: BorderRadius.all(Radius.circular(20))),
             width: 400,
-            //Separa os itens do container das bordas dele
+            //Separate the container items from it's borders.
             child: Padding(
               padding: const EdgeInsets.all(20),
               child: Column(
@@ -42,11 +42,11 @@ class _SignupDesktopState extends State<SignupDesktop> {
                     style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
                   ),
                   Padding(
-                      //separa os elementos do container entre si
+                    //Separates the container items themselves.
                       padding: EdgeInsets.symmetric(vertical: 20.0),
                       child: Column(
                         children: <Widget>[
-                          //ÁREA DE DIGITAR DADOS
+                          //Type data area
                           TextFormField(
                             keyboardType: TextInputType.emailAddress,
                             style: TextStyle(
@@ -99,7 +99,7 @@ class _SignupDesktopState extends State<SignupDesktop> {
                       )),
 
                   SizedBox(height: 20),
-                  //BOTÃO DE ENVIAR DADOS
+                  //Send data button
                   MaterialButton(
                       color: Color.fromRGBO(65, 70, 71, 1.0),
                       shape: RoundedRectangleBorder(

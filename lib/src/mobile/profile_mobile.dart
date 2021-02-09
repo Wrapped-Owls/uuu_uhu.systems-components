@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:uuu_uhu.systems_components/src/web/tabs/profileTab.dart';
 import 'package:uuu_uhu.systems_components/src/web/tabs/profileTab.dart';
 
-//obs: esse widget está como stateful pq a ideia é usar setState para
-//mudar a tab ao clicar no inkwell
 
 class ProfileMobile extends StatefulWidget {
   final String title1, title2, title3;
@@ -22,10 +20,10 @@ class ProfileMobileState extends State<ProfileMobile> {
 
     return Column(
       children: <Widget>[
-        //ESSE STACK EXISTE PARA PÔR BOTÕES SOBRE O BANNER
+        //That Stack exists to put the buttons over the banner
         Stack(
           children: <Widget>[
-            //CONTAINER DA IMAGEM
+            //Image Container
             Container(
               decoration: BoxDecoration(
                 image: DecorationImage(
@@ -35,14 +33,14 @@ class ProfileMobileState extends State<ProfileMobile> {
               ),
               height: screenSize.height / 2,
             ),
-            //BOTÕES CENTRAIS
+            //Central Buttons
             Center(
               heightFactor: 1.2,
               child: Padding(
                 padding: EdgeInsets.only(
                   top: screenSize.height * 0.40,
                 ),
-                //OS 3 TABS ESTÃO AQUI
+                //The 3 tabs are here
                 child: Card(
                   child: Row(
                     children: <Widget>[

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class LogInMobile extends StatefulWidget {
-  LogInMobile({Key key}) : super(key: key);
+  LogInMobile({Key? key}) : super(key: key);
 
   @override
   _LogInMobileState createState() => _LogInMobileState();

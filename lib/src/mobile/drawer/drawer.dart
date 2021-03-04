@@ -4,7 +4,7 @@ import 'package:uuu_uhu.systems_components/src/mobile/drawer/drawer_header.dart'
 import 'package:uuu_uhu.systems_components/src/mobile/drawer/drawer_item.dart';
 
 class MainDrawer extends StatelessWidget {
-  const MainDrawer({Key key}) : super(key: key);
+  const MainDrawer({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

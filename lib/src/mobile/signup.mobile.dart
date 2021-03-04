@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class SignupMobile extends StatefulWidget {
-  SignupMobile({Key key}) : super(key: key);
+  SignupMobile({Key? key}) : super(key: key);
 
   @override
   _SignupMobileState createState() => _SignupMobileState();

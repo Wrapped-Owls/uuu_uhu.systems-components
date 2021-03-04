@@ -45,7 +45,7 @@ abstract class UuuUhuThemes {
     UuuUhuComponents.DIALOG: Color(0xFFc9d6d6),
     UuuUhuComponents.CHECKBOX: Color(0xFF558a6a),
     UuuUhuComponents.BUTTON: Colors.greenAccent,
-    UuuUhuComponents.INPUT: Color(0xFFB7E6B3),
+    UuuUhuComponents.INPUT: Color(0xFF1016B3),
     UuuUhuComponents.SELECT_TEXT: Color(0xFF3C565E),
     UuuUhuComponents.TITLE_TEXT: Color(0xFF8a8807),
     UuuUhuComponents.APPBAR_TEXT: Colors.black54,
@@ -89,7 +89,7 @@ abstract class UuuUhuThemes {
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(25.0),
-          borderSide: BorderSide(color: palette[UuuUhuComponents.INPUT]),
+          borderSide: BorderSide(color: palette[UuuUhuComponents.INPUT]!),
         ),
       ),
       textSelectionColor: palette[UuuUhuComponents.SELECT_TEXT],
@@ -124,7 +124,7 @@ abstract class UuuUhuThemes {
     );
   }
 
-  static Color currentPalette(UuuUhuComponents desired) {
+  static Color? currentPalette(UuuUhuComponents desired) {
     return _currentTheme ? darkColors[desired] : lightColors[desired];
   }
 

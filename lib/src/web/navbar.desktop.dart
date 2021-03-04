@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:uuu_uhu.systems_components/src/theme.uuu_uhu.systems_components.dart';
 
 class NavbarDesktop extends StatefulWidget {
-  const NavbarDesktop({Key key}) : super(key: key);
+  const NavbarDesktop({Key? key}) : super(key: key);
 
   @override
   _NavbarDesktopState createState() => _NavbarDesktopState();
@@ -19,7 +20,7 @@ class _NavbarDesktopState extends State<NavbarDesktop> {
       child: PreferredSize(
         preferredSize: Size(screenSize.width, 1000),
         child: Container(
-          color: Color.fromRGBO(65, 70, 71, 1.0),
+          color: UuuUhuThemes.currentPalette(UuuUhuComponents.BAR),
           child: Padding(
             padding: EdgeInsets.all(20),
             child: Row(

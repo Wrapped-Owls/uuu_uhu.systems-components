@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class SignupDesktop extends StatefulWidget {
-  SignupDesktop({Key key}) : super(key: key);
+  SignupDesktop({Key? key}) : super(key: key);
 
   @override
   _SignupDesktopState createState() => _SignupDesktopState();

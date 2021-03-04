@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:uuu_uhu.systems_components/friggraynd_icons.dart';
 
 class NavbarMobile extends StatefulWidget {
-  NavbarMobile({Key key}) : super(key: key);
+  NavbarMobile({Key? key}) : super(key: key);
 
   @override
   _NavbarMobileState createState() => _NavbarMobileState();

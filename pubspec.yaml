@@ -9,19 +9,20 @@ homepage: https://github.com/Wrapped-Owls
 publish_to: "none" # Remove this line if you wish to publish to pub.dev
 
 environment:
-  sdk: ">=2.10.0 <3.0.0"
+  sdk: '>=2.12.0 <3.0.0'
   flutter: ">=1.17.0"
 
 dependencies:
   flutter:
     sdk: flutter
-  crypto: ^2.1.5
-  device_info: ^1.0.0
+  crypto: ^3.0.0
+  device_info: ^2.0.0
+  responsive_builder: ^0.4.0-nullsafety.1
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  pedantic: ^1.9.2
+  pedantic: ^1.11.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

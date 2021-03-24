@@ -2,7 +2,7 @@ import 'package:flutter/widgets.dart';
 
 abstract class FriggrayndIcons {
   static const _kFontFam = 'FriggrayndIcons';
-  static const _kFontPkg = null;
+  static const dynamic _kFontPkg = null;
 
   static const IconData friggraynd_enemies = IconData(0xe800, fontFamily: _kFontFam, fontPackage: _kFontPkg);
   static const IconData friggraynd_cvheip = IconData(0xe801, fontFamily: _kFontFam, fontPackage: _kFontPkg);
